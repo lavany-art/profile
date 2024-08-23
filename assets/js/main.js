@@ -17,5 +17,3 @@ if(navClose){
     })
 }
 
-////circle skill///
-const circle

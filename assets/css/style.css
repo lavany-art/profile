@@ -269,97 +269,62 @@ span{
         margin-top: 4rem;
     }
 }
-/* my skill */
-.main-text{
-   width: 100%;
-   text-align: center; 
-   margin-bottom: 1rem;
-   color: var(--normal-font);
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
 }
-.main-text h2{
-    font-weight: 700;
-    font-size: 1rem;
+    
+.education.education-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem; 
 }
-.main-text span{
-    color: #3deaf7;
-    font-size: 1rem;
-    font-weight: 200;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.skill-main{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row-gap: 30px;
-    grid: column gap 50px;
-}
-.skill-bar{
-    margin-bottom: 2.3rem;
+    
+.education-row.education-column {
+    
+    flex: 1 1 40rem;
     
 }
-.skill-main h3{
-    margin-bottom: 2rem;
-    font-size:var(--normal-font);
-    text-align: center;
-}
-.skill-left .skill-bar .info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-}   
-.skill-left .skill-bar .bar{
-    width: 100%;
-    height: 10px;
-    background-color:var(--bg-color) ;
-    border-radius: 24px;
-    margin-top: 10px;
-    position: relative;
 
+.education-column .title {
+    
+    font-size: 2.5rem;
+    
+    margin: 0 0 1.5rem 2rem;
 }
-.skill-bar .bar span{
-    width: 40%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background: var(--hover-color);
-    border-radius: 24px;
-    box-shadow: var(--neon-box-shadow);
+
+.education-column.education-box {
+    
+    border-left: 2rem solid var(--main-color);
+    
 }
-.skill-bar.bar.html{
-    width: 50%;
-    animation: 2s;
+    
+.education-box.education-content {
+    
+    position: relative;
+    
+    padding-left: 2rem;
+    
 }
-.skill-bar .bar .css{
-    width: 50%;
-    animation: 2s;
-}
-.skill-bar.bar.javascript{
-    width: 50%;
-    animation: 2s;
-}
-@keyframes html{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 50%;
-    }
-}
-@keyframes css{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 50%;
-    }
-}
-@keyframes javascript{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 50%;
-    }
+.education-content .content {
+    
+    position: relative;
+    
+    padding: 1.5rem;
+    
+    border: .2rem solid var(--main-color);
+    
+    border-radius: .6rem;
+    
+    margin-bottom: 2rem; 
+}    
+.education-content .content .year {
+    font-size: 1.5rem; 
+    color: var(--main-color);
+    padding-bottom: .5rem;  
 }
